@@ -1,0 +1,135 @@
+:root {
+    --primary-bg-color: white;
+    --primary-text-color: black;
+
+    --secondary-bg-color: #409643;
+    --secondary-text-color: white;
+
+    --menu-bg-color: #f4f4f4;
+
+    --footer-bg-color: #333;
+    --footer-text-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    width: 5px;
+    background: var(--menu-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 1em;
+    background-color: #797b7d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--footer-bg-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+
+    font-size: 13px;
+    color: var(--primary-text-color);
+    background: var(--primary-bg-color);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+
+    padding: 10px;
+    position: sticky; /* Sticky header */
+    top: 0;
+    text-align: center;
+}
+
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 10px;
+
+    color: var(--footer-text-color);
+    background-color: var(--footer-bg-color);
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.menu {
+    font-size: 18px;
+    background-color: var(--menu-bg-color);
+    padding: 15px;
+    width: 180px;
+}
+
+.menu h2 {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main h2 {
+    margin-top: 0;
+}
+
+section {
+    margin: 10px 0;
+}
+
+.variants, .variants-align-start {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+
+.variants-align-start {
+    align-items: start;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

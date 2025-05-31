@@ -1,0 +1,30 @@
+services:
+  oracle-db:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: polyclinic_oracle_db
+    environment:
+      - ORACLE_PASSWORD=admin123
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      - ./init-sql:/container-entrypoint-initdb.d
+    networks:
+      - polyclinic-network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: polyclinic_app
+    ports:
+      - "8080:8080"
+    networks:
+      - polyclinic-network
+
+networks:
+  polyclinic-network:
+    driver: bridge
+
+volumes:
+  oracle_data:

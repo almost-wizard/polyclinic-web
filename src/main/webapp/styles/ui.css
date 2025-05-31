@@ -1,0 +1,191 @@
+form[name="loginForm"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5%;
+
+    margin: 0 20px;
+    padding: 5px 10px;
+    height: fit-content;
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+    transition: .2s linear;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+}
+
+.no-hover:hover {
+    filter: brightness(100%);
+}
+
+.secondary {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.transparent {
+    color: var(--primary-text-color);
+    background-color: transparent;
+}
+
+.green {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.red {
+    color: white;
+    background-color: red;
+}
+
+.red-text {
+    color: red;
+}
+
+.blue {
+    color: white;
+    background-color: royalblue;
+}
+
+.link {
+    text-decoration: underline;
+    border: 0;
+    display: block;
+    text-align: center;
+}
+
+.text {
+    text-decoration: none;
+    border: 0;
+    display: block;
+    text-align: center;
+}
+
+.text:hover {
+    cursor: default;
+    filter: brightness(100%);
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.h100 {
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.s100 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.m5 {
+    margin: 5px;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mx5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.my5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
+.px5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.py5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0 10px;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid black;
+}
